@@ -10,7 +10,7 @@ Suggestive structure of a data-repository would be:
 ├── docs/  -scannded documents
 ├── data/ - raw data 
 |   ├── raw_data/
-|   ├── derived_data/
+|   ├── mapped_data/
 |   └── dwc/
 ├── src/
 ├── meta.xml
