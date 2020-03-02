@@ -6,7 +6,7 @@ With "legacy data" we understand data that not longer are actively managed. Due 
 Suggestive structure of a data-repository would be: 
 
 ```
-├── README.txt (or .md)
+├── minimum_metadata.txt (or .md)
 ├── docs/  -scannded documents
 ├── data/ - raw data 
 |   ├── raw_data/
