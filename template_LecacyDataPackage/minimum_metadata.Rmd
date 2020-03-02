@@ -1,4 +1,8 @@
 # Minimum metadata
 
-## [enter information here....]
+## Dataset Name: 
+
+## Responsible person: 
+
+
 [....]
