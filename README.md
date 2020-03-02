@@ -14,6 +14,7 @@ Suggestive structure of a data-repository would be:
 |   └── dwc/
 ├── src/
 ├── meta.xml
+├── dmp.xxx
 
 ```
 
