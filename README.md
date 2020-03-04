@@ -1,4 +1,4 @@
-# LegacyDataPackage
+# TheDataPackage
 Repro containing suggestive archive structure for storing legacy data
 
 With "legacy data" we understand data that not longer are actively managed. Due to the share volume of this kind of data floating around in different institutions, there is a need for low-treshold archiving with the purpose of preserving information at a level where it may be retrivable, but not investing exessivly prepparation for use. 
