@@ -3,7 +3,7 @@ Repro containing suggestive archive structure and procedures for data storage
 
 The data package should work both for legacy data and contemporary data. With "legacy data" we understand data that not longer are actively managed. While the principles for data management and documentation is the same, the workflow may be slightly different. Due to the share volume of legacy data floating around in different institutions, there is a need for low-threshold archiving with the purpose of preserving information at a level where it may be retrievable, but not investing excessively preparation for use. Hence, priority here should be given to archiving raw data (either digitized or scanned analog material) with a minimum set of metadata to facilitate discovery and re-use. 
 
-## DataPackage structure 
+## DataPackage structure [to be expanded]
 
 Data-repository structure is simple and contains dedicated folders for documentation, data, source code along with metadata:
 
@@ -20,7 +20,7 @@ Data-repository structure is simple and contains dedicated folders for documenta
 
 ```
 
-## Workflow
+## Workflow [to be expanded]
 
 A typical project, either involving data resque of legacy-data or contemporary data would involve several logical steps. Main parts outlined below:
 
