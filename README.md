@@ -1,20 +1,23 @@
 # TheDataPackage
-Repro containing suggestive archive structure for storing legacy data
+Repro containing suggestive archive structure and proceduers for data storage
 
-With "legacy data" we understand data that not longer are actively managed. Due to the share volume of this kind of data floating around in different institutions, there is a need for low-treshold archiving with the purpose of preserving information at a level where it may be retrivable, but not investing exessivly prepparation for use. 
+The data package should work both for lecacy data and contemporary data. With "legacy data" we understand data that not longer are actively managed. While the principles for data managment and documentation is the same, the workflow may be sligtly different.  
 
-Suggestive structure of a data-repository would be: 
+Due to the share volume of this kind of data floating around in different institutions, there is a need for low-treshold archiving with the purpose of preserving information at a level where it may be retrivable, but not investing exessivly prepparation for use. 
+
+Data-repository structure is simple and contains dedicted folders for documentation, data, source code along with metadata:
 
 ```
 ├── minimum_metadata.txt (or .md)
-├── docs/  -scannded documents
-├── data/ - raw data 
-|   ├── raw_data/
-|   ├── mapped_data/
-|   └── dwc/
-├── src/
-├── meta.xml
-├── dmp.xxx
+├── docs/  -dokumentation (e.g. procedual reports, laboratory protocols)
+├── data/ 
+|   ├── scan_data/ - analog data in digital format
+|   ├── raw_data/ - raw data - born digital or punched from paper forms
+|   ├── mapped_data/ - data mapped from raw data 
+|   └── dwc/ - dwc represenation of the dataset
+├── src/ - srcipts et al. used for mapping data
+├── meta.xml - metadata in EML
+├── dmp.xxx - data managment plan
 
 ```
 
