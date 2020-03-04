@@ -1,0 +1,12 @@
+Package: TheDataPackage
+Type: Package
+Title: Functions for creating folder structure and metadata for projects
+Version: 0.1.0
+Author: Matt Grainger, Erlend Nilsen; Anders Finstad; Caitlin Mandeville; Hendrik Bernsten 
+Maintainer: The package maintainer <matthew.grainger@nina.no>
+Description: The package builds a standardised folder structure and has developed 
+    functions and markdown templates for metadata description in a standard format for 
+    legacy data.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
