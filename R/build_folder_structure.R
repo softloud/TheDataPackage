@@ -12,12 +12,16 @@ build_folder_structure<-function(project_name=project_name){
     dir.create(paste0(getwd(),"/",project_name,"/", "data"))
     dir.create(paste0(getwd(),"/", project_name,"/","data", "/", "raw_data"))
     dir.create(paste0(getwd(),"/", project_name,"/","data", "/", "mapped_data"))
-    dir.create(paste0(getwd(),"/", project_name,"/","data", "/", "dwc"))
-    dir.create(paste0(getwd(),"/", project_name,"/","data", "/", "scanned_raw_data_input_sheets"))
+    dir.create(paste0(getwd(),"/", project_name,"/","data", "/", "scan_data"))
+    dir.create(paste0(getwd(),"/", project_name,"/","scripts"))
+    dir.create(paste0(getwd(),"/", project_name,"/","meta_xml"))
+    dir.create(paste0(getwd(),"/", project_name,"/","dmp"))
+    #rmarkdown::draft(paste0(project_name,"_minimum_metadata"),
+    #                 template="/TheDataPackage/minimum_metadata.Rmd")
       }
 
 }
 
-build_folder_structure(project_name = "Test")
+#build_folder_structure(project_name = "Test")
 
 
