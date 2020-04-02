@@ -16,11 +16,11 @@ build_folder_structure<-function(project_name=project_name){
     dir.create(paste0(getwd(),"/", project_name,"/","scripts"))
     dir.create(paste0(getwd(),"/", project_name,"/","meta_xml"))
     dir.create(paste0(getwd(),"/", project_name,"/","dmp"))
-    rmarkdown::draft("minimum_metadata.Rmd",
-                     template="minimum_metadata", package="TheDataPackage")
+    rmarkdown::draft(paste0(getwd(),"/", project_name,"/", "minimum_metadata", "/","minimum_metadata.Rmd"),
+                     template="minimum_metadata", package="TheDataPackage", edit=FALSE)
       }
 
 }
 
-build_folder_structure(project_name = "Test")
+#build_folder_structure(project_name = "Test")
 
