@@ -7,6 +7,6 @@ Maintainer: The package maintainer <matthew.grainger@nina.no>
 Description: The package builds a standardised folder structure and has developed 
     functions and markdown templates for metadata description in a standard format for 
     legacy data.
-License: GPL-2
+License: LICENSE
 Encoding: UTF-8
 LazyData: true
