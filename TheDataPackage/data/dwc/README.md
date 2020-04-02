@@ -1,1 +1,0 @@
-# dwc mapped data readme
