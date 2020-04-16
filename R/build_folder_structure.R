@@ -18,9 +18,16 @@ build_folder_structure<-function(project_name=project_name){
     dir.create(paste0(getwd(),"/", project_name,"/","dmp"))
     rmarkdown::draft(paste0(getwd(),"/", project_name,"/", "minimum_metadata", "/","minimum_metadata.Rmd"),
                      template="minimum_metadata", package="TheDataPackage", edit=FALSE)
+
       }
 
 }
 
 #build_folder_structure(project_name = "Test")
+
+
+#NEED TO ADD TEST
+#library(neet)
+# expected type will be a folder - what is this as an R object
+# check list.files function documentation
 
