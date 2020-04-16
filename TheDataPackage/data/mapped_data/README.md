@@ -1,1 +1,0 @@
-# mapped_data readme
