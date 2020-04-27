@@ -1,13 +1,13 @@
 context("file structure")
 library(neet)
+library(here)
 
-system("rm -rf test-build-dirs")
 
 dir_name <- "file-structure"
 
-build_folder_structure(dir_name)
+build_folder_structure(here(dir_name))
 
-test_neet(list.dirs(dir_name), "character")
+test_neet(list.dirs(here(dir_name)), "character")
 
-system("rm -rf test-build-dirs")
+system("rm -rf file-structure")
 
