@@ -3,7 +3,11 @@ library(neet)
 
 system("rm -rf test-build-dirs")
 
-build_folder_structure("test-build-dirs")
+dir_name <- "file-structure"
+
+build_folder_structure(dir_name)
+
+test_neet(list.dirs(dir_name), "character")
 
 system("rm -rf test-build-dirs")
 
