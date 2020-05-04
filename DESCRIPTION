@@ -11,7 +11,8 @@ License: LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    neet (>= 0.0.0.9000)
+    neet (>= 0.0.0.9000),
+    here
 Remotes: 
     softloud/neet
 Suggests: 
