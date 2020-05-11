@@ -1,0 +1,75 @@
+---
+title: "workflow"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{workflow}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  comment = "#>"
+)
+```
+
+```{r setup, message=FALSE}
+library(TheDataPackage)
+library(googlesheets)
+library(tidyverse)
+library(janitor)
+library(tidygraph)
+library(ggraph)
+library(hrbrthemes)
+library(kableExtra)
+
+  
+```
+
+```{r get data}
+workflow_gs <- gs_url("https://docs.google.com/spreadsheets/d/1QAmJ9MgbCelhYiJYY0If8r0KC99qQmlJKBBeO4ESoAc/edit?usp=sharing")
+
+workflow_data <- gs_read(workflow_gs) %>% 
+  clean_names()
+
+```
+
+
+```{r set up graph}
+nodes <- workflow_data %>% select(object)
+
+edges <- workflow_data %>% 
+  select(-description) %>% 
+  rename(from = object, to = next_step)
+  
+
+
+```
+
+
+```{r }
+workflow_data %>% 
+  kable() 
+
+
+```
+
+
+```{r graph, fig.width=8, fig.height=3}
+tbl_graph(nodes, edges) %>% 
+  ggraph() +
+  geom_edge_link(arrow = arrow(), colour = "lightgrey") + 
+  geom_node_text(
+    size = 3,
+    aes(label = object)
+  ) + 
+  scale_colour_ipsum() +
+  theme_graph() +
+  scale_x_reverse()
+
+```
+

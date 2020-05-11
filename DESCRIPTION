@@ -16,4 +16,7 @@ Imports:
 Remotes: 
     softloud/neet
 Suggests: 
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
